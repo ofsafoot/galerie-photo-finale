@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Gallery: Benin</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <script src="js/gallery.js"></script>
+</head>
+
+<body onload="addTabFocus()">
+  <main>
+    <h1>Photo Gallery: Benin</h1>
+    <p class="intro">Hover over a picture with the mouse, or use the Tab key to move from one picture to the next.</p>
+
+    <div id="image" aria-live="polite">Hover over an image below to display here.</div>
+
+    <div class="previews">
+      <img class="preview" src="images/ganvie-pirogues.jpg" alt="Stilt houses in Ganvié"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/pendjari.jpg" alt="Elephants in the Pendjari park"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/kota.jpg" alt="The Kota waterfalls"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/abomey.jpg" alt="Royal Palace of Abomey"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/temple-pythons.jpg" alt="Python Temple in Ouidah"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/bouche-du-roy.jpg" alt="Beach at the Bouche du Roy"
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    </div>
+  </main>
+
+  <footer>
+    <p class="credits">
+      Photos from Wikimedia Commons:
+      <a href="https://commons.wikimedia.org/wiki/File:Ganvie2.jpg">Ganvié</a> by Manu25 (CC BY-SA 3.0),
+      <a href="https://commons.wikimedia.org/wiki/File:Elephants_Pendjari_National_Park.jpg">Pendjari</a> by Marc Auer
+      (CC BY 2.0),
+      <a href="https://commons.wikimedia.org/wiki/File:Chutes_de_Kota_%281%29.jpg">Kota</a> by Ji-Elle (CC BY-SA 4.0),
+      <a href="https://commons.wikimedia.org/wiki/File:Royal_Palaces_of_Abomey-133470.jpg">Abomey</a> by Karalyn
+      Monteil (CC BY-SA 3.0 IGO),
+      <a href="https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_du_Temple_des_Pythons_%28Ouidah%29.jpg">Ouidah</a>
+      by Ji-Elle (CC BY-SA 4.0),
+      <a href="https://commons.wikimedia.org/wiki/File:Bouche_du_Roi_in_Grand_Popo_Benin.jpg">Bouche du Roy</a> by
+      Kulttuurinavigaattori (CC BY-SA 4.0).
+    </p>
+  </footer>
+</body>
+
+</html>
